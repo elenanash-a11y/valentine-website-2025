@@ -318,3 +318,16 @@ function setupMusicPlayer() {
         }
     });
 } 
+
+function openNote() {
+    const noteModal = document.createElement('div');
+    noteModal.className = 'note-modal';
+    noteModal.innerHTML = `
+        <div class="note-content">
+            <p>${config.celebration.noteText}</p>
+            <button class="cute-btn" onclick="this.closest('.note-modal').remove()">Close 💕</button>
+        </div>
+    `;
+    document.body.appendChild(noteModal);
+}
+
