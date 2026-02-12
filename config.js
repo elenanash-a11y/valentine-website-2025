@@ -45,11 +45,13 @@ const CONFIG = {
     normal: ""
   },
 
-  celebration: {
-    title: "Aww! I'm the luckiest homikje! Here a small note for you.",
-    message: "Spend this Valentine's with me on Saturday, at 17:00 at Achibald Restaurant Bussum",
+celebration: {
+    title: "Aww! I'm the luckiest homikje!",
+    subtitle: "Here a small note for you.",
+    buttonText: "Open the note 💌",
+    noteText: "Spend this Valentine's with me on Saturday, at 17:00 at Achibald Restaurant Bussum",
     emojis: "💝💖💗💓❤️"
-  },
+},
 
   colors: {
     backgroundStart: "#ffafbd",
