@@ -49,7 +49,11 @@ celebration: {
     title: "Aww! I'm the luckiest homikje!",
     subtitle: "Here a small note for you.",
     buttonText: "Open the note 💌",
-    noteText: "Spend this Valentine's with me on Saturday, at 17:00 at Achibald Restaurant Bussum",
+noteText: `Let’s celebrate Valentine’s Day together on Saturday  
+at 17:00 at Achibald Restaurant in Bussum.
+
+Love always,  
+Elena`,
     emojis: "💝💖💗💓❤️"
 },
 
