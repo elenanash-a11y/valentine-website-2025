@@ -235,22 +235,28 @@ if (loveMeter && loveValue && extraLove) {
 // Celebration function
 function celebrate() {
     document.querySelectorAll('.question-section').forEach(q => q.classList.add('hidden'));
-    const celebration = $('celebration');
-    if (!celebration) return;
 
+    const celebration = document.getElementById('celebration');
     celebration.classList.remove('hidden');
 
-    // Set celebration messages
-    const t = $('celebrationTitle');
-    const m = $('celebrationMessage');
-    const e = $('celebrationEmojis');
+    const title = document.getElementById('celebrationTitle');
+    const message = document.getElementById('celebrationMessage');
+    const emojis = document.getElementById('celebrationEmojis');
 
-    if (t) t.textContent = config.celebration.title || "";
-    if (m) m.textContent = config.celebration.message || "";
-    if (e) e.textContent = config.celebration.emojis || "";
+    title.textContent = config.celebration.title;
+    
+    // Добавляем параграф между предложениями
+    message.innerHTML = `
+        <p>${config.celebration.subtitle}</p>
+        <button id="openNoteBtn" class="cute-btn">${config.celebration.buttonText}</button>
+    `;
 
-    // Create heart explosion effect
+    emojis.textContent = config.celebration.emojis;
+
     createHeartExplosion();
+
+    // Открытие note
+    document.getElementById('openNoteBtn').addEventListener('click', openNote);
 }
 
 // Create heart explosion animation
